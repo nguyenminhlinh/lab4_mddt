@@ -1,5 +1,5 @@
 
-**** 12/02/22 09:19:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:29:39 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -32,56 +32,20 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source LAB4
-E_U1         N00322 0 VALUE {LIMIT(V(N00130,N00137)*1E6,-15V,+15V)}
-R_R1         N00137 N00144  10k TC=0,0 
-V_V1         N00130 0 2Vdc
-Q_Q2         N00335 N00322 N00144 QbreakN 
-V_V2         N00335 0 12Vdc
-R_R2         0 N00144  1k TC=0,0 
-R_R3         0 N00137  5k TC=0,0 
+E_U1         N01138 0 VALUE {LIMIT(V(N01092,N00137)*1E6,-20V,+20V)}
+R_R1         N00137 N01138  9k TC=0,0 
+V_V1         N00132 0 1Vdc
+R_R3         0 N00137  1k TC=0,0 
+R_R4         N01092 N00132  1k TC=0,0 
+V_V3         N00931 0 2Vdc
+R_R5         N01092 N00931  2k TC=0,0 
+V_V4         N01044 0 3Vdc
+R_R6         N01092 N01044  5k TC=0,0 
 
 **** RESUMING lab4.cir ****
 .END
 
-**** 12/02/22 09:19:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
-
- ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
-
-
- ****     BJT MODEL PARAMETERS
-
-
-******************************************************************************
-
-
-
-
-               QbreakN         
-               NPN             
-       LEVEL    1            
-          IS  100.000000E-18 
-          BF  100            
-          NF    1            
-          BR    1            
-          NR    1            
-         ISS    0            
-          RE    0            
-          RC    0            
-         CJE    0            
-         VJE     .75         
-         CJC    0            
-         VJC     .75         
-         MJC     .33         
-        XCJC    1            
-         CJS    0            
-         VJS     .75         
-          KF    0            
-          AF    1            
-          CN    2.42         
-           D     .87         
-
-
-**** 12/02/22 09:19:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:29:39 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -96,9 +60,9 @@ R_R3         0 N00137  5k TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00130)    2.0000 (N00137)    2.0000 (N00144)    6.0000 (N00322)    6.8219     
+(N00132)    1.0000 (N00137)    1.5294 (N00931)    2.0000 (N01044)    3.0000     
 
-(N00335)   12.0000 
+(N01092)    1.5294 (N01138)   15.2940 
 
 
 
@@ -106,16 +70,17 @@ R_R3         0 N00137  5k TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1         0.000E+00
-    V_V2        -6.337E-03
+    V_V1         5.294E-04
+    V_V3        -2.353E-04
+    V_V4        -2.941E-04
 
-    TOTAL POWER DISSIPATION   7.60E-02  WATTS
+    TOTAL POWER DISSIPATION   8.24E-04  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 12/02/22 09:19:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:29:39 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -127,6 +92,6 @@ R_R3         0 N00137  5k TC=0,0
 
 
 
-  License check-out time            =      112.23
-  Total job time (using Solver 1)   =         .22
+  License check-out time            =      112.70
+  Total job time (using Solver 1)   =         .20
 
