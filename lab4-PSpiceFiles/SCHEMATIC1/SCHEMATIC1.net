@@ -1,7 +1,8 @@
 * source LAB4
 E_U1         N00322 0 VALUE {LIMIT(V(N00130,N00137)*1E6,-15V,+15V)}
 R_R1         N00137 N00144  10k TC=0,0 
-V_V1         N00130 0 3Vdc
+V_V1         N00130 0 2Vdc
 Q_Q2         N00335 N00322 N00144 QbreakN 
 V_V2         N00335 0 12Vdc
 R_R2         0 N00144  1k TC=0,0 
+R_R3         0 N00137  5k TC=0,0 

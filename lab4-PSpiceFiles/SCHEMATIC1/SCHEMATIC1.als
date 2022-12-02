@@ -5,4 +5,5 @@ V_V1            V1(+=N00130 -=0 ) CN @LAB4.SCHEMATIC1(sch_1):INS114@SOURCE.VDC.N
 Q_Q2            Q2(c=N00335 b=N00322 e=N00144 ) CN @LAB4.SCHEMATIC1(sch_1):INS302@BREAKOUT.QbreakN.Normal(chips)
 V_V2            V2(+=N00335 -=0 ) CN @LAB4.SCHEMATIC1(sch_1):INS368@SOURCE.VDC.Normal(chips)
 R_R2            R2(1=0 2=N00144 ) CN @LAB4.SCHEMATIC1(sch_1):INS530@ANALOG.R.Normal(chips)
+R_R3            R3(1=0 2=N00137 ) CN @LAB4.SCHEMATIC1(sch_1):INS668@ANALOG.R.Normal(chips)
 .ENDALIASES

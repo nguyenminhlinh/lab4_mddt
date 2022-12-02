@@ -1,5 +1,5 @@
 
-**** 12/02/22 09:01:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:19:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -34,15 +34,16 @@
 * source LAB4
 E_U1         N00322 0 VALUE {LIMIT(V(N00130,N00137)*1E6,-15V,+15V)}
 R_R1         N00137 N00144  10k TC=0,0 
-V_V1         N00130 0 3Vdc
+V_V1         N00130 0 2Vdc
 Q_Q2         N00335 N00322 N00144 QbreakN 
 V_V2         N00335 0 12Vdc
 R_R2         0 N00144  1k TC=0,0 
+R_R3         0 N00137  5k TC=0,0 
 
 **** RESUMING lab4.cir ****
 .END
 
-**** 12/02/22 09:01:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:19:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -80,7 +81,7 @@ R_R2         0 N00144  1k TC=0,0
            D     .87         
 
 
-**** 12/02/22 09:01:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:19:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -95,7 +96,7 @@ R_R2         0 N00144  1k TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00130)    3.0000 (N00137)    3.0000 (N00144)    3.0000 (N00322)    3.8024     
+(N00130)    2.0000 (N00137)    2.0000 (N00144)    6.0000 (N00322)    6.8219     
 
 (N00335)   12.0000 
 
@@ -106,15 +107,15 @@ R_R2         0 N00144  1k TC=0,0
     NAME         CURRENT
 
     V_V1         0.000E+00
-    V_V2        -2.970E-03
+    V_V2        -6.337E-03
 
-    TOTAL POWER DISSIPATION   3.56E-02  WATTS
+    TOTAL POWER DISSIPATION   7.60E-02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 12/02/22 09:01:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:19:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -126,6 +127,6 @@ R_R2         0 N00144  1k TC=0,0
 
 
 
-  License check-out time            =      112.00
-  Total job time (using Solver 1)   =         .23
+  License check-out time            =      112.23
+  Total job time (using Solver 1)   =         .22
 
