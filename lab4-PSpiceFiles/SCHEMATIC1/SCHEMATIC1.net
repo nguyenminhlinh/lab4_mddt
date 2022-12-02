@@ -2,6 +2,6 @@
 E_U1         N01138 0 VALUE {LIMIT(V(N01742,N00137)*1E6,-40V,+40V)}
 R_R1         N00137 N01138  9k TC=0,0 
 R_R2         0 N00137  1k TC=0,0 
-R_R3         N01742 N01729  1k TC=0,0 
-C_C1         N00137 N01138  1.1n  TC=0,0 
 V_V2         N01729 0 DC 0Vdc AC 2Vac 
+C_C2         N01729 N01742  1n  TC=0,0 
+R_R3         0 N01742  10k TC=0,0 

@@ -1,5 +1,5 @@
 
-**** 12/02/22 09:46:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:55:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -36,16 +36,16 @@
 E_U1         N01138 0 VALUE {LIMIT(V(N01742,N00137)*1E6,-40V,+40V)}
 R_R1         N00137 N01138  9k TC=0,0 
 R_R2         0 N00137  1k TC=0,0 
-R_R3         N01742 N01729  1k TC=0,0 
-C_C1         N00137 N01138  1.1n  TC=0,0 
 V_V2         N01729 0 DC 0Vdc AC 2Vac 
+C_C2         N01729 N01742  1n  TC=0,0 
+R_R3         0 N01742  10k TC=0,0 
 
 **** RESUMING lab4.cir ****
 .END
 
 INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
 
-**** 12/02/22 09:46:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:55:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -76,7 +76,7 @@ INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each f
 
           JOB CONCLUDED
 
-**** 12/02/22 09:46:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:55:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -88,6 +88,6 @@ INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each f
 
 
 
-  License check-out time            =      113.61
-  Total job time (using Solver 1)   =         .24
+  License check-out time            =      114.09
+  Total job time (using Solver 1)   =         .22
 
