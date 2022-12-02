@@ -1,5 +1,5 @@
 
-**** 12/02/22 09:36:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:46:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -23,6 +23,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
+.AC LIN 200 1 50k
 .OPTIONS ADVCONV
 .OPTIONS FILEMODELSEARCH
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
@@ -32,17 +33,19 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source LAB4
-E_U1         N01138 0 VALUE {LIMIT(V(0,N00137)*1E6,-40V,+40V)}
-R_R1         N00137 N01138  10k TC=0,0 
-V_V1         N00132 0 1Vdc
-R_R4         N00137 N00132  1k TC=0,0 
-V_V2         N00931 0 5Vdc
-R_R5         N00137 N00931  2k TC=0,0 
+E_U1         N01138 0 VALUE {LIMIT(V(N01742,N00137)*1E6,-40V,+40V)}
+R_R1         N00137 N01138  9k TC=0,0 
+R_R2         0 N00137  1k TC=0,0 
+R_R3         N01742 N01729  1k TC=0,0 
+C_C1         N00137 N01138  1.1n  TC=0,0 
+V_V2         N01729 0 DC 0Vdc AC 2Vac 
 
 **** RESUMING lab4.cir ****
 .END
+
+INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
 
-**** 12/02/22 09:36:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:46:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -57,7 +60,7 @@ R_R5         N00137 N00931  2k TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00132)    1.0000 (N00137) 35.00E-06 (N00931)    5.0000 (N01138)  -34.9990 
+(N00137)    0.0000 (N01138)    0.0000 (N01729)    0.0000 (N01742)    0.0000 
 
 
 
@@ -65,16 +68,15 @@ R_R5         N00137 N00931  2k TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -1.000E-03
-    V_V2        -2.500E-03
+    V_V2         0.000E+00
 
-    TOTAL POWER DISSIPATION   1.35E-02  WATTS
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 12/02/22 09:36:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/02/22 09:46:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab4"  [ D:\MDDT\LAB4\lab4-PSpiceFiles\SCHEMATIC1\lab4.sim ] 
 
@@ -86,6 +88,6 @@ R_R5         N00137 N00931  2k TC=0,0
 
 
 
-  License check-out time            =      113.14
-  Total job time (using Solver 1)   =         .20
+  License check-out time            =      113.61
+  Total job time (using Solver 1)   =         .24
 
