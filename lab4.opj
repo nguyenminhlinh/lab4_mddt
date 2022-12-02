@@ -4,20 +4,72 @@
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
-    (Allegro Netlist Directory "allegro")
+    ("Allegro Netlist Directory" "allegro")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
     (NoModify)
     (File ".\lab4.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
-    (CompileFileAddedOrDeleted "x"))
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
   (Folder "Layout")
-  (Folder "Outputs")
+  (Folder "Outputs"
+    (File ".\lab4-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Simulation Profiles")
-    (Folder "Model Libraries")
-    (Folder "Stimulus Files")
-    (Folder "Include Files"))
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\lab4-pspicefiles\schematic1\lab4.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab4-pspicefiles\schematic1\lab4.sim"
+        (DisplayName "SCHEMATIC1-lab4")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
-  (Folder "Logs"))
+  (Folder "Logs")
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "minhl")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 76 0 400"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 555 24 418")
+        (Scroll "318 264")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "D:\MDDT\LAB4\LAB4.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
